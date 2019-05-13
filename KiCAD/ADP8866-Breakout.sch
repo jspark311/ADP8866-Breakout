@@ -1,0 +1,251 @@
+EESchema Schematic File Version 4
+LIBS:ADP8866-Breakout-cache
+EELAYER 26 0
+EELAYER END
+$Descr User 7874 5906
+encoding utf-8
+Sheet 1 1
+Title "ADP8866 Breakout"
+Date "2019-05-12"
+Rev "1"
+Comp "Manuvr, Inc"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L adp8866:ADP8866 U1
+U 1 1 5CE5C65E
+P 3300 2700
+F 0 "U1" H 3100 2700 60  0000 C CNN
+F 1 "ADP8866" H 3200 2600 60  0000 C CNN
+F 2 "Package_DFN_QFN:UQFN-20-1EP_4x4mm_P0.5mm_EP2.8x2.8mm" H 2900 1550 60  0001 C CNN
+F 3 "" H 3300 2700 60  0000 C CNN
+F 4 "ADP8866ACPZ-R7" H 3300 2700 50  0001 C CNN "Manu_Number"
+F 5 "Analog Devices Inc" H 3300 2700 50  0001 C CNN "Manu_Name"
+F 6 "ADP8866ACPZ-R7CT-ND" H 3300 2700 50  0001 C CNN "Digikey_Number"
+	1    3300 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5CE5C76A
+P 3800 1850
+F 0 "C4" H 3915 1896 50  0000 L CNN
+F 1 "1uF" H 3915 1805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3838 1700 50  0001 C CNN
+F 3 "~" H 3800 1850 50  0001 C CNN
+F 4 "CGB3B1X7R1A105K055AC" H 3800 1850 50  0001 C CNN "Manu_Number"
+F 5 "TDK Corporation" H 3800 1850 50  0001 C CNN "Manu_Name"
+F 6 "445-13228-1-ND" H 3800 1850 50  0001 C CNN "Digikey_Number"
+	1    3800 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5CE5C7F6
+P 2300 3150
+F 0 "C2" V 2350 3000 50  0000 C CNN
+F 1 "1uF" V 2250 3000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2338 3000 50  0001 C CNN
+F 3 "~" H 2300 3150 50  0001 C CNN
+F 4 "CGB3B1X7R1A105K055AC" H 2300 3150 50  0001 C CNN "Manu_Number"
+F 5 "TDK Corporation" H 2300 3150 50  0001 C CNN "Manu_Name"
+F 6 "445-13228-1-ND" H 2300 3150 50  0001 C CNN "Digikey_Number"
+	1    2300 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5CE5C86C
+P 2300 2850
+F 0 "C1" V 2250 3000 50  0000 C CNN
+F 1 "1uF" V 2350 3000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2338 2700 50  0001 C CNN
+F 3 "~" H 2300 2850 50  0001 C CNN
+F 4 "CGB3B1X7R1A105K055AC" H 2300 2850 50  0001 C CNN "Manu_Number"
+F 5 "TDK Corporation" H 2300 2850 50  0001 C CNN "Manu_Name"
+F 6 "445-13228-1-ND" H 2300 2850 50  0001 C CNN "Digikey_Number"
+	1    2300 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5CE5C8F7
+P 3000 1650
+F 0 "C3" H 2950 1750 50  0000 R CNN
+F 1 "1uF" H 3200 1750 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3038 1500 50  0001 C CNN
+F 3 "~" H 3000 1650 50  0001 C CNN
+F 4 "CGB3B1X7R1A105K055AC" H 3000 1650 50  0001 C CNN "Manu_Number"
+F 5 "TDK Corporation" H 3000 1650 50  0001 C CNN "Manu_Name"
+F 6 "445-13228-1-ND" H 3000 1650 50  0001 C CNN "Digikey_Number"
+	1    3000 1650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2550 3150 2450 3150
+Wire Wire Line
+	2550 3000 2100 3000
+Wire Wire Line
+	2100 3000 2100 3150
+Wire Wire Line
+	2100 3150 2150 3150
+Wire Wire Line
+	2150 2850 2100 2850
+Wire Wire Line
+	2100 2850 2100 2700
+Wire Wire Line
+	2100 2700 2550 2700
+Wire Wire Line
+	2550 2850 2450 2850
+Wire Wire Line
+	3750 2200 3800 2200
+Wire Wire Line
+	3000 1500 3000 1450
+Wire Wire Line
+	3000 1450 3200 1450
+Wire Wire Line
+	3200 1450 3200 1950
+Wire Wire Line
+	3150 3400 3150 3450
+Wire Wire Line
+	3150 3450 3200 3450
+Wire Wire Line
+	3250 3450 3250 3400
+Wire Wire Line
+	3200 3450 3200 3550
+Connection ~ 3200 3450
+Wire Wire Line
+	3200 3450 3250 3450
+Text Label 3200 3550 3    50   ~ 0
+GND
+Text Label 3000 1850 3    50   ~ 0
+GND
+Wire Wire Line
+	3000 1850 3000 1800
+Text Label 3800 1600 1    50   ~ 0
+GND
+Text Label 3150 1450 2    50   ~ 0
+Vcc
+$Comp
+L Connector_Generic:Conn_01x10 J2
+U 1 1 5CE5D64D
+P 4700 2650
+F 0 "J2" V 4800 2550 50  0000 L CNN
+F 1 "Conn_01x10" H 4500 2000 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 4700 2650 50  0001 C CNN
+F 3 "~" H 4700 2650 50  0001 C CNN
+	1    4700 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J1
+U 1 1 5CE5D756
+P 2150 2200
+F 0 "J1" V 2250 2200 50  0000 C CNN
+F 1 "Conn_01x06" H 2450 2000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 2150 2200 50  0001 C CNN
+F 3 "~" H 2150 2200 50  0001 C CNN
+	1    2150 2200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 2250 3800 2200
+Wire Wire Line
+	3850 2350 3750 2350
+Wire Wire Line
+	3850 2450 3750 2450
+Wire Wire Line
+	3850 2550 3750 2550
+Wire Wire Line
+	3850 2650 3750 2650
+Wire Wire Line
+	3850 2750 3750 2750
+Wire Wire Line
+	3850 2850 3750 2850
+Wire Wire Line
+	3850 2950 3750 2950
+Wire Wire Line
+	3850 3050 3750 3050
+Wire Wire Line
+	3850 3150 3750 3150
+Wire Wire Line
+	2350 2200 2550 2200
+Wire Wire Line
+	2350 2300 2550 2300
+Wire Wire Line
+	2350 2400 2550 2400
+Wire Wire Line
+	2350 2500 2550 2500
+Wire Wire Line
+	2350 2100 2450 2100
+Text Label 2450 2000 0    50   ~ 0
+GND
+Text Label 2450 2100 0    50   ~ 0
+Vcc
+Wire Wire Line
+	2350 2000 2450 2000
+Wire Wire Line
+	3800 1600 3800 1700
+Wire Wire Line
+	3800 2000 3800 2200
+Connection ~ 3800 2200
+Text Label 3850 2350 0    50   ~ 0
+D3
+Text Label 3850 2450 0    50   ~ 0
+D2
+Text Label 3850 2550 0    50   ~ 0
+D1
+Text Label 3850 2650 0    50   ~ 0
+D9
+Text Label 3850 2750 0    50   ~ 0
+D8
+Text Label 3850 2850 0    50   ~ 0
+D7
+Text Label 3850 3150 0    50   ~ 0
+D4
+Text Label 3850 3050 0    50   ~ 0
+D5
+Text Label 3850 2950 0    50   ~ 0
+D6
+Text Label 4450 2850 2    50   ~ 0
+D3
+Text Label 4450 2950 2    50   ~ 0
+D2
+Text Label 4450 3050 2    50   ~ 0
+D1
+Text Label 4450 3150 2    50   ~ 0
+D9
+Text Label 4450 2750 2    50   ~ 0
+D8
+Text Label 4450 2650 2    50   ~ 0
+D7
+Text Label 4450 2350 2    50   ~ 0
+D4
+Text Label 4450 2450 2    50   ~ 0
+D5
+Text Label 4450 2550 2    50   ~ 0
+D6
+Wire Wire Line
+	3800 2250 4500 2250
+Wire Wire Line
+	4450 2350 4500 2350
+Wire Wire Line
+	4450 2450 4500 2450
+Wire Wire Line
+	4450 2550 4500 2550
+Wire Wire Line
+	4450 2650 4500 2650
+Wire Wire Line
+	4450 2750 4500 2750
+Wire Wire Line
+	4450 2850 4500 2850
+Wire Wire Line
+	4450 2950 4500 2950
+Wire Wire Line
+	4450 3050 4500 3050
+Wire Wire Line
+	4450 3150 4500 3150
+$EndSCHEMATC
