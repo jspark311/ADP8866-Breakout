@@ -1,0 +1,32 @@
+#########################################
+# Syntax Coloring Map For Arduino-ADP8866
+#########################################
+
+#########################################
+# Datatypes (KEYWORD1)
+#########################################
+
+ADP8866        KEYWORD1
+ADPLEDChannel  KEYWORD1
+
+#########################################
+# Methods and Functions (KEYWORD2)
+#########################################
+
+quell_all_timers    KEYWORD2
+toggle_brightness    KEYWORD2
+set_fade       KEYWORD2
+pulse_channel  KEYWORD2
+set_brightness     KEYWORD2
+channel_enabled     KEYWORD2
+enable_channel     KEYWORD2
+set_led_mode    KEYWORD2
+setMaxCurrents  KEYWORD2
+printDebug      KEYWORD2
+
+
+#########################################
+# Constants (LITERAL1)
+#########################################
+
+ADP8866_I2CADDR  LITERAL1
